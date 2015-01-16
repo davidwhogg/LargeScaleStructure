@@ -3,6 +3,42 @@
 
 \begin{document}
 
-This document is \texttt{\githash~(\gitdate)}.
+\section*{Likelihood-free inference \\ for large-scale structure projects}
+\noindent
+\textit{draft version \texttt{\githash~(\gitdate)}}
+
+\bigskip
+\noindent
+by DWH and others
+
+\bigskip
+\begin{abstract}
+The traditonal methods for cosmological parameter inference in
+large-scale structure surveys involve estimation of a two-point
+function (correlation function or power spectrum) and then
+construction of a chi-squared loss function or approximate Gaussian
+likelihood function based on that estimator.
+Even in the approximation or limit in which the two-point function is
+a sufficient statistic for all cosmological parameter estimation, the
+contruction of the approximate likelihood function is not justifiable;
+that is, there is no set of assumptions under which cosmological
+inferences based on this approximate likelihood function are expected
+to be correct in detail.
+Here we build a likelihood-free inference (LFI), or approximate
+Bayesian computation (ABC), for large-scale structure surveys that
+makes fewer assumptions than the traditional analyses, and which
+returns correct posterior inferences about the cosmological parameters
+under a well defined set of assumptions.
+That is, the LFI is protected by proofs of correctness, unlike the
+traditional methods.
+The method relies on the existence of simulation code that can
+generate realistic mock survey data, and involves adaptive sampling
+from priors over cosmological parameters.
+With good choices, the likelihood-free method is comparably expensive
+to the contemporary implementations of the traditional methodology in
+terms of computational resources.
+We perform tests with mock data and SDSS-III BOSS data to demonstrate
+and validate the LFI method.
+\end{abstract}
 
 \end{document}
